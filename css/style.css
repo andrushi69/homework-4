@@ -7,11 +7,6 @@ body {
 p {
   color: #757575;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -88,7 +83,13 @@ p {
   margin-right: 50px;
 }
 /* main-section index.html*/
-
+.main-section {
+  background-color: #2f303a;
+  color: #ffffff;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
 .main-title {
   font-family: Roboto;
   font-weight: 900;
