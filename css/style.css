@@ -73,16 +73,50 @@ img {
 .link-4 {
   color: #757575;
   text-decoration: none;
-  margin-left: 280px;
+  margin-left: 254px;
+  display: flex;
 }
 
 .link-4-item {
   color: #757575;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.link-4-item-2 {
+  color: #757575;
+  text-decoration: none;
   margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+.link-4-item::before {
+  content: "";
+  background-image: url(../svg/envelope.svg);
+  display: block;
+  width: 16px;
+  height: 12px;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.link-4-item-2::before {
+  content: "";
+  background-image: url(../svg/smartphone.svg);
+  display: block;
+  width: 10px;
+  height: 16px;
+  background-size: contain;
+  margin-right: 10px;
+}
+.link-4-item:hover::before {
+  fill: #2196f3;
+}
+.link-4-item-2:hover::before {
+  fill: #2196f3;
 }
 .link-4 > .link-4-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 /* main-section index.html*/
 .main-section {
@@ -271,6 +305,85 @@ img {
 .profession-description {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+/* clients section index.html*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-top: -50px;
+  margin-left: -30px;
+  margin-bottom: 0;
+}
+.clients-box {
+  height: 90px;
+  margin-left: 30px;
+  margin-top: 50px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  list-style-type: none;
+  flex-basis: calc((100% - 120px) / 6);
+}
+.clients-link:hover {
+  fill: #2196f3;
+}
+.clients-box > .clients-link {
+  background-image: url(../svg/logo-1.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+}
+.clients-box > .clients-link-2 {
+  background-image: url(../svg/logo-2.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+}
+.clients-box > .clients-link-3 {
+  background-image: url(../svg/logo-3.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+}
+.clients-box > .clients-link-4 {
+  background-image: url(../svg/logo-4.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+}
+.clients-box > .clients-link-5 {
+  background-image: url(../svg/logo-5.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+}
+.clients-box > .clients-link-6 {
+  background-image: url(../svg/logo-6.svg);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
 }
 
 /* footer section index.html and portfolio.html*/
