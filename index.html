@@ -26,7 +26,7 @@
           >
 
           <ul class="list">
-            <li><a class="link" href="">Студия</a></li>
+            <li><a class="link-studio" href="index.html">Студия</a></li>
             <li><a class="link" href="portfolio.html">Портфолио</a></li>
             <li><a class="link" href="">Контакты</a></li>
 
@@ -56,7 +56,14 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <a href="" data-modal-close class ="close"></a>
+          </div>
         </div>
       </section>
 
@@ -109,13 +116,20 @@
                 width="370"
                 alt="человек пишет коды"
               />
+              <div class="label">
+                <p class="label-title">Десктопные приложения</p>
+              </div>
             </li>
+
             <li class="image-1">
               <img
                 src="./images/box-2.jpg"
                 width="370"
                 alt="телефон и ноутбук"
               />
+              <div class="label">
+                <p class="label-title">Мобильные приложения</p>
+              </div>
             </li>
             <li class="image-1">
               <img
@@ -123,6 +137,9 @@
                 width="370"
                 alt="илюстрация на планшете"
               />
+              <div class="label">
+                <p class="label-title">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -513,5 +530,6 @@
         </address>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
